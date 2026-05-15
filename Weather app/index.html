@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Premium Weather App</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<button id="darkModeToggle">
+🌙
+</button>
+
+<div class="search-box">
+
+<input
+type="text"
+id="city"
+placeholder="Enter city name"
+>
+
+<button onclick="getWeather()">
+Search
+</button>
+
+</div>
+
+<div class="weather-box">
+
+<h1 id="temp">--°C</h1>
+
+<h2 id="cityName">Your City</h2>
+
+<img
+id="weatherIcon"
+src="https://cdn-icons-png.flaticon.com/512/869/869869.png"
+>
+
+<p id="condition">Weather Condition</p>
+
+<div class="details">
+
+<div>
+<h3>Humidity</h3>
+<p id="humidity">--%</p>
+</div>
+
+<div>
+<h3>Wind</h3>
+<p id="wind">-- km/h</p>
+</div>
+
+</div>
+
+<div class="sun-info">
+
+<div class="sun-card">
+<h3>Sunrise</h3>
+<p id="sunrise">--:--</p>
+</div>
+
+<div class="sun-card">
+<h3>Sunset</h3>
+<p id="sunset">--:--</p>
+</div>
+
+</div>
+
+<div class="hourly">
+
+<h3>Hourly Forecast</h3>
+
+<div class="hourly-box" id="hourlyBox">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
